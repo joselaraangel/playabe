@@ -1,0 +1,5 @@
+02 nov 2015 23:13:42,385 INFO  ~ Starting C:\Users\Invitado\Documents\NetBeansProjects\yabe
+02 nov 2015 23:13:46,710 WARN  ~ You're running Play! in DEV mode
+02 nov 2015 23:13:47,205 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+02 nov 2015 23:14:09,930 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0 for default
+02 nov 2015 23:14:15,934 INFO  ~ Application 'yabe' is now started !
