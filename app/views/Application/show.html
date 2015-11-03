@@ -29,10 +29,11 @@
  
 #{form @Application.postComment(post.id)}
  
+
     #{ifErrors}
-        <p class="error">
-            Todos los campos son requeridos!
-        </p>
+    <p class="error">
+        ${errors[0]}
+    </p>
     #{/ifErrors}
  
     <p>
@@ -44,8 +45,16 @@
         <textarea name="content" id="content">${params.content}</textarea>
     </p>
     <p>
+        <label for="code">introduce el codigo que aparece en la imagen: </label>
+        <img src="@{Application.captcha(randomID)}" />
+        <br/>
+        <input type="text" name="code" id="code" size="18" value="" />
+        <input type="hidden" name="randomID" value="${randomID}" />
+    </p>
+    <p>
         <input type="submit" value="Enviar comentario" />
     </p>
+    
 #{/form}
 
 <script type="text/javascript" charset="utf-8">
